@@ -11,8 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     links.forEach(link => {
         if (link.getAttribute('href') === currentPath) {
             link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
         } else {
             link.classList.remove('active');
+            link.removeAttribute('aria-current');
         }
     });
 

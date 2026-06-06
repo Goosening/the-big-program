@@ -51,6 +51,26 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
+/* Přístupnost: viditelné fokusové styly pro klávesnici */
+a:focus,
+button:focus,
+.btn-next:focus,
+.btn-primary:focus,
+.nav-link:focus {
+    outline: 3px solid rgba(14,165,233,0.35);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+/* Skip-link: již existuje, zajistit čitelnost při fokusování */
+.skip-link:focus {
+    top: 0;
+    left: 0;
+    background: var(--clr-primary-500);
+    color: white;
+    padding: 8px 12px;
+}
+
 ul { list-style: none; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 .skip-link { position: absolute; top: -40px; left: 0; background: var(--clr-primary-500); color: white; padding: 8px; z-index: 100; }
