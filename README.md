@@ -119,13 +119,7 @@ python -m http.server 8000
 
 Pak otevřete v prohlížeči: `http://localhost:8000`
 
-### Umístění obrázků
-V projektu vytvořte složku `images/` v kořenovém adresáři a ukládejte tam všechny obrázky použitá na stránkách. Doporučená struktura:
-
-- `images/screenshots/` — screenshoty desktop / mobil
-- `images/assets/` — ikony, ilustrace, optimalizované obrázky pro web
-
-Pravidla a doporučení:
+### Pravidla a doporučení:
 - Používejte relativní cesty v HTML, např. `<img src="images/screenshots/home-desktop.png" alt="Úvodní strana - desktop">`.
 - Preferujte moderní formáty (WebP) pro fotografie a PNG/SVG pro grafiku.
 - Optimalizujte rozměry a velikost souborů pro rychlé načítání.
