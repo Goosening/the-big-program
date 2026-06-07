@@ -4,7 +4,7 @@
 
 **AI Insights** je jednoduchý více-stránkový prezentační web o umělé inteligenci. Cílem je představit základní principy AI, její využití a dokumentaci technických rozhodnutí v přehledné a responzivní podobě.
 
-Živý web: https://www.mojeaiprezentace.cz/
+Živý web: https://goosening.github.io/AI_Vyuziti_Web/
 
 ## 2. Použité technologie
 
@@ -27,6 +27,10 @@
 
 ## 4. Technický rozbor
 
+Pro každou z šesti oblastí optimalizace obsahuje tento rozbor:
+- teoretický popis řešení
+- výstřižek kódu s komentářem, jak problém řeší
+
 ### Výkon
 Web používá co nejméně externích zdrojů.
 
@@ -47,7 +51,7 @@ Stránky obsahují základní SEO meta tagy a strukturu.
 
 ```html
 <meta name="description" content="Simplistický úvod do světa umělé inteligence.">
-<link rel="canonical" href="https://www.mojeaiprezentace.cz/">
+<link rel="canonical" href="https://goosening.github.io/AI_Vyuziti_Web/">
 ```
 
 ### Přístupnost
@@ -109,11 +113,23 @@ Otevřete `index.html` přímo v prohlížeči.
 Pokud používáte Python, můžete spustit lokální server:
 
 ```powershell
-cd "c:\Users\Kuchtík\Desktop\the big program"
+# Spusťte příkaz v kořenovém adresáři projektu
 python -m http.server 8000
 ```
 
 Pak otevřete v prohlížeči: `http://localhost:8000`
+
+### Umístění obrázků
+V projektu vytvořte složku `images/` v kořenovém adresáři a ukládejte tam všechny obrázky použitá na stránkách. Doporučená struktura:
+
+- `images/screenshots/` — screenshoty desktop / mobil
+- `images/assets/` — ikony, ilustrace, optimalizované obrázky pro web
+
+Pravidla a doporučení:
+- Používejte relativní cesty v HTML, např. `<img src="images/screenshots/home-desktop.png" alt="Úvodní strana - desktop">`.
+- Preferujte moderní formáty (WebP) pro fotografie a PNG/SVG pro grafiku.
+- Optimalizujte rozměry a velikost souborů pro rychlé načítání.
+- Vždy vyplňte `alt` atribut pro přístupnost.
 
 ## 7. Galerie
 
@@ -122,3 +138,20 @@ Pak otevřete v prohlížeči: `http://localhost:8000`
 - Klíčové funkce: aktivní odkaz v navigaci, skip link, responsivní rozvržení, animace načítání obsahu.
 
 > Poznámka: Doporučuji do galerie přidat screenshoty za běhu v desktopu a mobilu z Chrome DevTools nebo z mobilního zařízení.
+
+### Co vyfotit v kódu
+
+Pokud chceš dodat screenshoty kódu, vyfoť tyto části:
+
+- `index.html` - hlavička se SEO/Open Graph meta tagy a `canonical` adresou.
+- `index.html` - struktura navigace a `skip-link` pro přístupnost.
+- `style.css` - responsivní část, např. `meta viewport`, `clamp()` a styly pro mobilní menu.
+- `script.js` - logika pro aktivní odkaz v navigaci a chování při `pageshow`/scrollu.
+- `dokumentace.html` - kus dokumentace, který ukazuje technický obsah projektu.
+
+Pro vložení do `README.md` můžeš použít Markdown syntax jako:
+
+```md
+![Desktop verze](images/screenshots/home-desktop.png)
+![Mobilní verze](images/screenshots/home-mobile.png)
+```

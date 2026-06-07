@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mojeaiprezentace.cz/sitemap.xml
+Sitemap: https://goosening.github.io/AI_Vyuziti_Web/sitemap.xml
