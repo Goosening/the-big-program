@@ -128,7 +128,7 @@ Pak otevřete v prohlížeči: `http://localhost:8000`
 ## 7. Galerie
 
 - Desktop verze: úvodní stránka se sidebar navigací.
-  <img width="250" height="250" alt="obrazek" src="https://github.com/user-attachments/assets/7d46ecbc-a0ea-412f-b5c0-4698503a5a44" />
-  
+<img src="images/screenshots/image-1.png" alt="Úvodní strana - desktop" width="600" style="max-width:100%;height:auto;">
+
 - Mobilní verze: postranní panel se mění na horní navigaci a obsah je čitelný na malých obrazovkách.
-  <img width="250" height="250" alt="obrazek" src="https://github.com/user-attachments/assets/012d5138-ced6-434e-b289-0de42a33209f" />
+<img src="images/screenshots/image.png" alt="Mobilní verze - mobil" width="360" style="max-width:100%;height:auto;">
