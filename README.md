@@ -119,7 +119,7 @@ python -m http.server 8000
 
 Pak otevřete v prohlížeči: `http://localhost:8000`
 
-### Pravidla a doporučení:
+## Pravidla a doporučení:
 - Používejte relativní cesty v HTML, např. `<img src="images/screenshots/home-desktop.png" alt="Úvodní strana - desktop">`.
 - Preferujte moderní formáty (WebP) pro fotografie a PNG/SVG pro grafiku.
 - Optimalizujte rozměry a velikost souborů pro rychlé načítání.
@@ -128,5 +128,7 @@ Pak otevřete v prohlížeči: `http://localhost:8000`
 ## 7. Galerie
 
 - Desktop verze: úvodní stránka se sidebar navigací.
+  <img width="1204" height="1234" alt="obrazek" src="https://github.com/user-attachments/assets/7d46ecbc-a0ea-412f-b5c0-4698503a5a44" />
 - Mobilní verze: postranní panel se mění na horní navigaci a obsah je čitelný na malých obrazovkách.
+  <img width="763" height="1166" alt="obrazek" src="https://github.com/user-attachments/assets/012d5138-ced6-434e-b289-0de42a33209f" />
 - Klíčové funkce: aktivní odkaz v navigaci, skip link, responsivní rozvržení, animace načítání obsahu.
